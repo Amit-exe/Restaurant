@@ -1,4 +1,257 @@
-.App {
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  display: block;
+
+
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+h1{
+  font-family: "Montserrat-Black";
+  font-size: 5rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+h2{
+  font-family: "Montserrat-Black";
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+
+.navbar{
+  padding: 0 0 4.5rem 0;
+
+}
+.nav-item{
+  padding: 0 18px;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light"
+}
+
+
+#home{
+  height: auto;
+  background-color: black;
+  background-repeat: no-repeat;
+  padding: 3% 15% 10%;
+  padding-bottom: 0;
+
+
+}
+#menu{
+  padding: 4% 10%;
+}
+
+#drinks{
+  padding: 4% 10%;
+  background-color: #000;
+  color: #fff;
+  /* padding-bottom: 4%; */
+
+}
+
+#events{
+  padding: 4% 10%;
+}
+
+
+#footer{
+  text-align: center;
+  padding: 7% 15%;
+  background-color: #393E46;
+
+}
+
+#footer p{
+  color:#777;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.social-icons{
+  display: inline-block;
+  font-size: 1.5rem;
+  color:#fff;
+  width: 50%;
+}
+.social-icons i{
+  margin: 1% 2%;
+}
+
+
+.homeimg{
+
+  width: 100%;
+
+}
+.main-navbar{
+  position: fixed;
+  top:0;
+  width: 100%;
+  margin: 0;
+}
+
+#asv{
+  color:white;
+}
+#ourstory{
+  padding-top:10%;
+  color:#fff;
+  font-size: 1.5rem;
+}
+#ourstory strong{
+  margin-top: 50px;
+}
+
+
+.logo{
+  height: 70px;
+  margin-right: 70px;
+}
+
+.menu{
+  margin: auto;
+}
+.foodCard{
+  text-align: center;
+  max-width: 30rem;
+  margin:  1.5rem;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), 0 5px 20px rgba(0, 0, 0, 0.1);
+  background-color: #393E46;
+  color:#fff;
+  transition: all 100ms ease-in-out;
+  display: inline-block;
+}
+
+.foodCard > img{
+  width: 300px;
+  object-fit:cover;
+  height: 200px;
+}
+
+
+.event-card{
+  border: 1px solid #864879;
+  background-color: #393E46;
+  border-radius: 12px;
+  margin: 30px auto;
+  padding-left: 20px;
+  width: 70%;
+  box-shadow: 7px 10px 7px #00000033;
+  color:#ccc;
+}
+.eventName{
+  font-size: 2.5rem;
+}
+.eventTime{
+  font-size: 1.2rem;
+}
+.eventDate{
+  font-size: 2.8rem;
+  color: #ccc;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  
+}
+
+.eventOffers{
+  background-color: #864879;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  
+  width: 50%;
+  height: 60%;
+  text-align: center;
+  padding: 5% 0;
+  border-radius: 50%;
+  /* transform: rotate(5deg); */
+
+}
+.eventOffers p{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  color:#fff;
+  
+}
+
+.about{
+  background-color: #000;
+  color:white;
+  padding: 7% 15%;
+
+}
+.about-noodles{
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border: 1px solid #555;
+
+}
+
+.about-drink{
+  position: absolute;
+  top: 150px;
+  right: 150px;
+  border: 1px solid #555;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+
+
+
+.foodCard > button {
+
+  border-radius: 5px;
+  border: none;
+  background-color:#ccc;
+
+}
+
+
+
+.quantbtn{
+  border-radius: 5px;
+  background-color:#ccc;
+  border: none;
+  margin: 3px;
+
+
+}
+
+.rating{
+  margin-top: 5px;;
+}
+
+.foodname{
+  font-size: 1.3rem;;
+}
+
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -22,6 +275,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
 }
 
 .App-link {
@@ -35,4 +289,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

@@ -1,23 +1,74 @@
-import logo from './logo.svg';
 import './App.css';
+import Footer from './components/Footer'
+import Header from './components/Header'
+import FoodItem from './components/FoodItem';
+import mainImg from './images/bg1.jpg'
+import menu from "./menuItems"
+import drinks from "./drinks"
+import events from "./events"
+import About from './components/about';
+import Event from './components/Events';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+      <section id="home">
+      <Header />
+      </section>
+
+      <section id="menu">
+      <h1>Menu items</h1>
+      {menu.map((item)=> (<FoodItem
+      img={item.img}
+      foodname={item.name}
+      rating={item.rating}
+      price={item.price} />))}
+      </section>
+
+      <section id="drinks">
+        <h1>Drinks</h1>
+        {drinks.map((item)=> (<FoodItem
+        img={item.img}
+        foodname={item.name}
+        rating={item.rating}
+        price={item.price} />))}
+
+      </section>
+
+      <section id="events">
+        <h1>Events</h1>
+        {events.map(event => (<Event 
+          name={event.name}
+          start={event.start}
+          end={event.end}
+          date={event.date}
+          offer={event.offers}
+        />))}
+        
+        
+      </section>
+
+      
+
+      <section id="about">
+        <About/>
+        <Footer/>
+
+      </section>
+
+
+
+
+
+
+
+
+
+
     </div>
   );
 }
