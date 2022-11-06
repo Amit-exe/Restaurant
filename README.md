@@ -1,15 +1,16 @@
+# Home
 ![image](https://user-images.githubusercontent.com/56499723/200157533-537e94f6-632c-4374-8d6a-0a42bfc3e155.png)
 
-#Menu
+# Menu
 ![image](https://user-images.githubusercontent.com/56499723/200157546-5773f1a2-cf74-47d3-9363-1184a975c5b7.png)
 
-#Drinks
+# Drinks
 ![image](https://user-images.githubusercontent.com/56499723/200157555-a5ab2775-679a-41b3-8a30-7dd2e6a0c60b.png)
 
-#Events
+# Events
 ![image](https://user-images.githubusercontent.com/56499723/200157563-d947ada6-da54-4d67-b81f-727b3c68245b.png)
 
-#about
+# About
 ![image](https://user-images.githubusercontent.com/56499723/200157571-5db420a2-0b63-4287-bb8f-9cf42ffada96.png)
 
 
