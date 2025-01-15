@@ -10,7 +10,7 @@ port = process.env.PORT || 3000;
 // middlewares
 app.use(express.json());
 
-app.use("api/menu", menuRoutes);
+app.use("/api/menu", menuRoutes);
 
 app.use((req, res, next) => {
   console.log(req.path, req.method);

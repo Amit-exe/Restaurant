@@ -2,8 +2,22 @@ const express = require("express");
 
 const router = express.Router();
 
-router.get("/", () => {
-  console.log("all menu items");
-});
+const {
+  getAllItems,
+  getSingleItems,
+  addItem,
+  updateItem,
+  deleteItem,
+} = require("../controller/menuController");
 
-export default router;
+router.get("/", getAllItems);
+
+router.get("/:id", getSingleItems);
+
+router.post("/", addItem);
+
+router.patch("/:id", updateItem);
+
+router.delete("/:id", deleteItem);
+
+module.exports = router;
