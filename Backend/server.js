@@ -2,7 +2,9 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const menuRoutes = require("./routes/menu");
-const orderRoutes = require("./routes/orders")
+const orderRoutes = require("./routes/orders");
+
+const authRoutes = require("./routes/authRoute");
 
 app = express();
 
@@ -13,7 +15,8 @@ app.use(express.json());
 
 app.use("/api/menu", menuRoutes);
 
-app.use("/api/order",orderRoutes)
+app.use("/api/auth", authRoutes);
+app.use("/api/order", orderRoutes);
 
 app.use((req, res, next) => {
   console.log(req.path, req.method);
